@@ -84,6 +84,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="C:/Users/User/Desktop/KR1/Root.cpp">
+			<Option target="KR1"/>
+		</Unit>
+		<Unit filename="C:/Users/User/Desktop/KR1/Root.h">
+			<Option target="KR1"/>
+		</Unit>
 		<Unit filename="C:/Users/User/Desktop/KR1/main.cpp">
 			<Option target="KR1"/>
 		</Unit>

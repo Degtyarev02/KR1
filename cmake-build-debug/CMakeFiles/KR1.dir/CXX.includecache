@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/User/Desktop/KR1/Root.cpp
+Root.h
+C:/Users/User/Desktop/KR1/Root.h
+
+C:/Users/User/Desktop/KR1/Root.h
+fstream
+-
+iostream
+-
+
+C:/Users/User/Desktop/KR1/main.cpp
+iostream
+-
+Root.h
+C:/Users/User/Desktop/KR1/Root.h
+

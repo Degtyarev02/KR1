@@ -127,6 +127,33 @@ KR1\fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\KR1.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\KR1.dir\build
 .PHONY : KR1\fast
 
+Root.obj: Root.cpp.obj
+
+.PHONY : Root.obj
+
+# target to build an object file
+Root.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\KR1.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\KR1.dir\Root.cpp.obj
+.PHONY : Root.cpp.obj
+
+Root.i: Root.cpp.i
+
+.PHONY : Root.i
+
+# target to preprocess a source file
+Root.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\KR1.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\KR1.dir\Root.cpp.i
+.PHONY : Root.cpp.i
+
+Root.s: Root.cpp.s
+
+.PHONY : Root.s
+
+# target to generate assembly for a file
+Root.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\KR1.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\KR1.dir\Root.cpp.s
+.PHONY : Root.cpp.s
+
 main.obj: main.cpp.obj
 
 .PHONY : main.obj
@@ -163,6 +190,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... KR1
+	@echo ... Root.obj
+	@echo ... Root.i
+	@echo ... Root.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

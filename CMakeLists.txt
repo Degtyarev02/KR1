@@ -3,4 +3,4 @@ project(KR1)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(KR1 main.cpp)
+add_executable(KR1 main.cpp Root.cpp Root.h)

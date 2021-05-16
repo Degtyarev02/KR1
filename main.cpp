@@ -1,6 +1,8 @@
 #include <iostream>
+#include "Root.h"
+using namespace std;
 
 int main() {
-    std::cout << "Hello, World!" << std::endl;
+    Root root;
     return 0;
 }
