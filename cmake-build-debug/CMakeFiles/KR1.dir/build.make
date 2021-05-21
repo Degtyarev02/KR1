@@ -47,10 +47,10 @@ RM = "C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\User\Desktop\KR1
+CMAKE_SOURCE_DIR = C:\Users\vladi\Desktop\KR1
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\User\Desktop\KR1\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\vladi\Desktop\KR1\cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles\KR1.dir\depend.make
@@ -63,57 +63,78 @@ include CMakeFiles\KR1.dir\flags.make
 
 CMakeFiles\KR1.dir\main.cpp.obj: CMakeFiles\KR1.dir\flags.make
 CMakeFiles\KR1.dir\main.cpp.obj: ..\main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\User\Desktop\KR1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/KR1.dir/main.cpp.obj"
-	C:\PROGRA~2\MICROS~4\2019\COMMUN~1\VC\Tools\MSVC\1428~1.293\bin\Hostx86\x86\cl.exe @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\KR1.dir\main.cpp.obj /FdCMakeFiles\KR1.dir\ /FS -c C:\Users\User\Desktop\KR1\main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\vladi\Desktop\KR1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/KR1.dir/main.cpp.obj"
+	C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1428~1.293\bin\Hostx86\x86\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\KR1.dir\main.cpp.obj /FdCMakeFiles\KR1.dir\ /FS -c C:\Users\vladi\Desktop\KR1\main.cpp
 <<
 
 CMakeFiles\KR1.dir\main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/KR1.dir/main.cpp.i"
-	C:\PROGRA~2\MICROS~4\2019\COMMUN~1\VC\Tools\MSVC\1428~1.293\bin\Hostx86\x86\cl.exe > CMakeFiles\KR1.dir\main.cpp.i @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\User\Desktop\KR1\main.cpp
+	C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1428~1.293\bin\Hostx86\x86\cl.exe > CMakeFiles\KR1.dir\main.cpp.i @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\vladi\Desktop\KR1\main.cpp
 <<
 
 CMakeFiles\KR1.dir\main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/KR1.dir/main.cpp.s"
-	C:\PROGRA~2\MICROS~4\2019\COMMUN~1\VC\Tools\MSVC\1428~1.293\bin\Hostx86\x86\cl.exe @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\KR1.dir\main.cpp.s /c C:\Users\User\Desktop\KR1\main.cpp
+	C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1428~1.293\bin\Hostx86\x86\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\KR1.dir\main.cpp.s /c C:\Users\vladi\Desktop\KR1\main.cpp
+<<
+
+CMakeFiles\KR1.dir\Base.cpp.obj: CMakeFiles\KR1.dir\flags.make
+CMakeFiles\KR1.dir\Base.cpp.obj: ..\Base.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\vladi\Desktop\KR1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/KR1.dir/Base.cpp.obj"
+	C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1428~1.293\bin\Hostx86\x86\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\KR1.dir\Base.cpp.obj /FdCMakeFiles\KR1.dir\ /FS -c C:\Users\vladi\Desktop\KR1\Base.cpp
+<<
+
+CMakeFiles\KR1.dir\Base.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/KR1.dir/Base.cpp.i"
+	C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1428~1.293\bin\Hostx86\x86\cl.exe > CMakeFiles\KR1.dir\Base.cpp.i @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\vladi\Desktop\KR1\Base.cpp
+<<
+
+CMakeFiles\KR1.dir\Base.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/KR1.dir/Base.cpp.s"
+	C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1428~1.293\bin\Hostx86\x86\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\KR1.dir\Base.cpp.s /c C:\Users\vladi\Desktop\KR1\Base.cpp
 <<
 
 CMakeFiles\KR1.dir\Root.cpp.obj: CMakeFiles\KR1.dir\flags.make
 CMakeFiles\KR1.dir\Root.cpp.obj: ..\Root.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\User\Desktop\KR1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/KR1.dir/Root.cpp.obj"
-	C:\PROGRA~2\MICROS~4\2019\COMMUN~1\VC\Tools\MSVC\1428~1.293\bin\Hostx86\x86\cl.exe @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\KR1.dir\Root.cpp.obj /FdCMakeFiles\KR1.dir\ /FS -c C:\Users\User\Desktop\KR1\Root.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\vladi\Desktop\KR1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/KR1.dir/Root.cpp.obj"
+	C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1428~1.293\bin\Hostx86\x86\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\KR1.dir\Root.cpp.obj /FdCMakeFiles\KR1.dir\ /FS -c C:\Users\vladi\Desktop\KR1\Root.cpp
 <<
 
 CMakeFiles\KR1.dir\Root.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/KR1.dir/Root.cpp.i"
-	C:\PROGRA~2\MICROS~4\2019\COMMUN~1\VC\Tools\MSVC\1428~1.293\bin\Hostx86\x86\cl.exe > CMakeFiles\KR1.dir\Root.cpp.i @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\User\Desktop\KR1\Root.cpp
+	C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1428~1.293\bin\Hostx86\x86\cl.exe > CMakeFiles\KR1.dir\Root.cpp.i @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\vladi\Desktop\KR1\Root.cpp
 <<
 
 CMakeFiles\KR1.dir\Root.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/KR1.dir/Root.cpp.s"
-	C:\PROGRA~2\MICROS~4\2019\COMMUN~1\VC\Tools\MSVC\1428~1.293\bin\Hostx86\x86\cl.exe @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\KR1.dir\Root.cpp.s /c C:\Users\User\Desktop\KR1\Root.cpp
+	C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1428~1.293\bin\Hostx86\x86\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\KR1.dir\Root.cpp.s /c C:\Users\vladi\Desktop\KR1\Root.cpp
 <<
 
 # Object files for target KR1
 KR1_OBJECTS = \
 "CMakeFiles\KR1.dir\main.cpp.obj" \
+"CMakeFiles\KR1.dir\Base.cpp.obj" \
 "CMakeFiles\KR1.dir\Root.cpp.obj"
 
 # External object files for target KR1
 KR1_EXTERNAL_OBJECTS =
 
 KR1.exe: CMakeFiles\KR1.dir\main.cpp.obj
+KR1.exe: CMakeFiles\KR1.dir\Base.cpp.obj
 KR1.exe: CMakeFiles\KR1.dir\Root.cpp.obj
 KR1.exe: CMakeFiles\KR1.dir\build.make
 KR1.exe: CMakeFiles\KR1.dir\objects1.rsp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\User\Desktop\KR1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable KR1.exe"
-	"C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\KR1.dir --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100183~1.0\x86\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100183~1.0\x86\mt.exe --manifests  -- C:\PROGRA~2\MICROS~4\2019\COMMUN~1\VC\Tools\MSVC\1428~1.293\bin\Hostx86\x86\link.exe /nologo @CMakeFiles\KR1.dir\objects1.rsp @<<
- /out:KR1.exe /implib:KR1.lib /pdb:C:\Users\User\Desktop\KR1\cmake-build-debug\KR1.pdb /version:0.0  /machine:X86 /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib 
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\vladi\Desktop\KR1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable KR1.exe"
+	"C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\KR1.dir --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100183~1.0\x86\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100183~1.0\x86\mt.exe --manifests  -- C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1428~1.293\bin\Hostx86\x86\link.exe /nologo @CMakeFiles\KR1.dir\objects1.rsp @<<
+ /out:KR1.exe /implib:KR1.lib /pdb:C:\Users\vladi\Desktop\KR1\cmake-build-debug\KR1.pdb /version:0.0  /machine:X86 /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib 
 <<
 
 # Rule to build all files generated by this target.
@@ -126,6 +147,6 @@ CMakeFiles\KR1.dir\clean:
 .PHONY : CMakeFiles\KR1.dir\clean
 
 CMakeFiles\KR1.dir\depend:
-	$(CMAKE_COMMAND) -E cmake_depends "NMake Makefiles" C:\Users\User\Desktop\KR1 C:\Users\User\Desktop\KR1 C:\Users\User\Desktop\KR1\cmake-build-debug C:\Users\User\Desktop\KR1\cmake-build-debug C:\Users\User\Desktop\KR1\cmake-build-debug\CMakeFiles\KR1.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "NMake Makefiles" C:\Users\vladi\Desktop\KR1 C:\Users\vladi\Desktop\KR1 C:\Users\vladi\Desktop\KR1\cmake-build-debug C:\Users\vladi\Desktop\KR1\cmake-build-debug C:\Users\vladi\Desktop\KR1\cmake-build-debug\CMakeFiles\KR1.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles\KR1.dir\depend
 

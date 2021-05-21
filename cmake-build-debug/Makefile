@@ -52,10 +52,10 @@ RM = "C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\vladi\Desktop\Lab3.4
+CMAKE_SOURCE_DIR = C:\Users\vladi\Desktop\KR1
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\vladi\Desktop\Lab3.4\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\vladi\Desktop\KR1\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -84,9 +84,9 @@ rebuild_cache\fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\vladi\Desktop\Lab3.4\cmake-build-debug\CMakeFiles C:\Users\vladi\Desktop\Lab3.4\cmake-build-debug\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\vladi\Desktop\KR1\cmake-build-debug\CMakeFiles C:\Users\vladi\Desktop\KR1\cmake-build-debug\CMakeFiles\progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\vladi\Desktop\Lab3.4\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\vladi\Desktop\KR1\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -115,17 +115,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named 3_4
+# Target rules for targets named KR1
 
 # Build rule for target.
-3_4: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) 3_4
-.PHONY : 3_4
+KR1: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) KR1
+.PHONY : KR1
 
 # fast build rule for target.
-3_4\fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\3_4.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\3_4.dir\build
-.PHONY : 3_4\fast
+KR1\fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\KR1.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\KR1.dir\build
+.PHONY : KR1\fast
 
 Base.obj: Base.cpp.obj
 
@@ -133,7 +133,7 @@ Base.obj: Base.cpp.obj
 
 # target to build an object file
 Base.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\3_4.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\3_4.dir\Base.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\KR1.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\KR1.dir\Base.cpp.obj
 .PHONY : Base.cpp.obj
 
 Base.i: Base.cpp.i
@@ -142,7 +142,7 @@ Base.i: Base.cpp.i
 
 # target to preprocess a source file
 Base.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\3_4.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\3_4.dir\Base.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\KR1.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\KR1.dir\Base.cpp.i
 .PHONY : Base.cpp.i
 
 Base.s: Base.cpp.s
@@ -151,7 +151,7 @@ Base.s: Base.cpp.s
 
 # target to generate assembly for a file
 Base.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\3_4.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\3_4.dir\Base.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\KR1.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\KR1.dir\Base.cpp.s
 .PHONY : Base.cpp.s
 
 Root.obj: Root.cpp.obj
@@ -160,7 +160,7 @@ Root.obj: Root.cpp.obj
 
 # target to build an object file
 Root.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\3_4.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\3_4.dir\Root.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\KR1.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\KR1.dir\Root.cpp.obj
 .PHONY : Root.cpp.obj
 
 Root.i: Root.cpp.i
@@ -169,7 +169,7 @@ Root.i: Root.cpp.i
 
 # target to preprocess a source file
 Root.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\3_4.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\3_4.dir\Root.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\KR1.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\KR1.dir\Root.cpp.i
 .PHONY : Root.cpp.i
 
 Root.s: Root.cpp.s
@@ -178,7 +178,7 @@ Root.s: Root.cpp.s
 
 # target to generate assembly for a file
 Root.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\3_4.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\3_4.dir\Root.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\KR1.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\KR1.dir\Root.cpp.s
 .PHONY : Root.cpp.s
 
 main.obj: main.cpp.obj
@@ -187,7 +187,7 @@ main.obj: main.cpp.obj
 
 # target to build an object file
 main.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\3_4.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\3_4.dir\main.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\KR1.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\KR1.dir\main.cpp.obj
 .PHONY : main.cpp.obj
 
 main.i: main.cpp.i
@@ -196,7 +196,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\3_4.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\3_4.dir\main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\KR1.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\KR1.dir\main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -205,7 +205,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\3_4.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\3_4.dir\main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\KR1.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\KR1.dir\main.cpp.s
 .PHONY : main.cpp.s
 
 # Help Target
@@ -216,7 +216,7 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... 3_4
+	@echo ... KR1
 	@echo ... Base.obj
 	@echo ... Base.i
 	@echo ... Base.s

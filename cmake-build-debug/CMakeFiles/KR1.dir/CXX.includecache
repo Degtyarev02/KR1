@@ -6,19 +6,17 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/User/Desktop/KR1/Root.cpp
-Root.h
-C:/Users/User/Desktop/KR1/Root.h
+C:/Users/vladi/Desktop/KR1/Base.cpp
+Base.h
+C:/Users/vladi/Desktop/KR1/Base.h
 
-C:/Users/User/Desktop/KR1/Root.h
+C:/Users/vladi/Desktop/KR1/Base.h
+string
+-
+vector
+-
+iostream
+-
 fstream
 -
-iostream
--
-
-C:/Users/User/Desktop/KR1/main.cpp
-iostream
--
-Root.h
-C:/Users/User/Desktop/KR1/Root.h
 

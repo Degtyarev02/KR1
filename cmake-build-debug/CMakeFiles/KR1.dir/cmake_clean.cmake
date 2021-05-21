@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/KR1.dir/Base.cpp.obj"
   "CMakeFiles/KR1.dir/Root.cpp.obj"
   "CMakeFiles/KR1.dir/main.cpp.obj"
   "KR1.exe"

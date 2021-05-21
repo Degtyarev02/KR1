@@ -30,8 +30,11 @@ int Base::getClassNum() {
 void Base::printFile() {
     ifstream textout("textfield.txt");
     string file;
+    int tmp = 0;
     while (getline(textout, file)) {
-        cout << file << endl;
+        if(tmp == 0) cout << file;
+        else cout << endl << file;
+        tmp++;
     }
     textout.close();
 }
