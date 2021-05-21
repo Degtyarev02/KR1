@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/vladi/Desktop/Lab3.4/Base.cpp
+Base.h
+C:/Users/vladi/Desktop/Lab3.4/Base.h
+
+C:/Users/vladi/Desktop/Lab3.4/Base.h
+string
+-
+vector
+-
+iostream
+-
+fstream
+-
+
+C:/Users/vladi/Desktop/Lab3.4/Root.cpp
+Root.h
+C:/Users/vladi/Desktop/Lab3.4/Root.h
+
+C:/Users/vladi/Desktop/Lab3.4/Root.h
+Base.h
+C:/Users/vladi/Desktop/Lab3.4/Base.h
+iostream
+-
+fstream
+-
+
+C:/Users/vladi/Desktop/Lab3.4/main.cpp
+Root.h
+C:/Users/vladi/Desktop/Lab3.4/Root.h
+

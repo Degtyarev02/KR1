@@ -1,15 +1,33 @@
 #ifndef ROOT_H
 #define ROOT_H
-#include <fstream>
+#include "Base.h"
 #include <iostream>
+#include <fstream>
 using namespace std;
 
-
-class Root
-{
+class Root:public Base {
+protected:
+    struct Note {
+        string obj1, obj2; int num;
+    };
+private:
+    vector<Note*> history;
 public:
+    int n = 1, m = 1;
+    char digit;
+    string findedline = "0";
+
+    Root(string name);
     Root();
+    void build();
+    void startsignal();
+    void p_signal(string& text);
+    void p_handler(string text);
+    static TYPE_SIGNAL getSignal(int cl);
+    static TYPE_HANDLER getHandler(int cl);
+    ~Root();
 };
-
-
 #endif
+
+
+

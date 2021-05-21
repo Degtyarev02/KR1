@@ -1,8 +1,7 @@
-#include <iostream>
 #include "Root.h"
-using namespace std;
 
 int main() {
     Root root;
+    root.build();
     return 0;
 }
