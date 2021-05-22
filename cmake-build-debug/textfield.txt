@@ -1,5 +1,6 @@
 8888888888
 8888888888
+888r888888
 8888888888
 8888888888
 8888888888
@@ -7,5 +8,6 @@
 8888888888
 8888888888
 8888888888
-8888888888
-Not a letter of the Latin alphabet: ª
+Coordinate is wrong ( 23, 4 )
+Coordinate is wrong ( 23, 5 )
+Not a letter of the Latin alphabet:  

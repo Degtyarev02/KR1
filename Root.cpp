@@ -19,17 +19,13 @@ void Root::build() {
     }
     string line;
     while (true) {
-        cin >> n >> m;
+        cin >> n >> m >> digit;
         if(n == 0 && m == 0) break;
-        else if (n < 1 || n > 10 || m < 1 || m > 10) {
-            textfield << "Coordinate is wrong ( " << n << ", " << m << " )" << endl;
+        else if ((n < 1 || n > 10 || m < 1 || m > 10) || (!((int)digit > 96 && (int)digit < 123 ) &&  !((int)digit > 64 && (int)digit < 91 ))) {
+            if (n < 1 || n > 10 || m < 1 || m > 10) textfield << "Coordinate is wrong ( " << n << ", " << m << " )" << endl;
+            if (!((int)digit > 96 && (int)digit < 123 ) &&  !((int)digit > 64 && (int)digit < 91 )) textfield << "Not a letter of the Latin alphabet: " << digit << endl;
         }
         else {
-            cin >> digit;
-            if (!((int)digit > 96 && (int)digit < 123 ) &&  !((int)digit > 64 && (int)digit < 91 )) {
-                textfield << "Not a letter of the Latin alphabet: " << digit << endl;
-            }
-            else {
                 int conectNum = 1;
                 Base *obj;
                 obj = find("obj");
@@ -43,7 +39,6 @@ void Root::build() {
                 findedline = obj->setCoordinates(n);
                 obj->setDigit(digit, m, n, findedline);
                 startsignal();
-            }
 
         }
     }
