@@ -27,17 +27,6 @@ int Base::getClassNum() {
     return a;
 }
 
-void Base::printFile() {
-    ifstream textout("textfield.txt");
-    string file;
-    int tmp = 0;
-    while (getline(textout, file)) {
-        if(tmp == 0) cout << file;
-        else cout << endl << file;
-        tmp++;
-    }
-    textout.close();
-}
 
 Base *Base::find(string name) {
     Base *element = nullptr;
@@ -111,8 +100,6 @@ void Base::setDigit(char digit, int m, int n, string changingLine) {
     firstTxt.open("textfield.txt", ifstream::in);
     secondTxt.open("tmp.txt", ofstream::out | ofstream::trunc);
 
-    /*ifstream firstTxt("textfield.txt");
-    ofstream secondTxt("tmp.txt");*/
     string tmpLine;
     while(getline(firstTxt, tmpLine)) secondTxt << tmpLine << endl;
     firstTxt.close(); secondTxt.close();
@@ -129,4 +116,16 @@ void Base::setDigit(char digit, int m, int n, string changingLine) {
     }
 
     ofs.close(); ifs.close();
+}
+
+void Base::printFile() {
+    ifstream textout("textfield.txt");
+    string file;
+    int tmp = 0;
+    while (getline(textout, file)) {
+        if(tmp == 0) cout << file;
+        else cout << endl << file;
+        tmp++;
+    }
+    textout.close();
 }

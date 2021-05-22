@@ -8,3 +8,4 @@
 8888888888
 8888888888
 8888888888
+Not a letter of the Latin alphabet: ª

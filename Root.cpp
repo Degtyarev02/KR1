@@ -26,7 +26,7 @@ void Root::build() {
         }
         else {
             cin >> digit;
-            if (!isalpha(digit)) {
+            if (!((int)digit > 96 && (int)digit < 123 ) &&  !((int)digit > 64 && (int)digit < 91 )) {
                 textfield << "Not a letter of the Latin alphabet: " << digit << endl;
             }
             else {
