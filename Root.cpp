@@ -17,14 +17,16 @@ void Root::build() {
         }
         textfield << endl;
     }
+    textfield.close();
+
     string line;
     while (true) {
         cin >> n >> m >> digit;
         if(n == 0 && m == 0) break;
-        else if ((n < 1 || n > 10 || m < 1 || m > 10) || (!((int)digit > 96 && (int)digit < 123 ) &&  !((int)digit > 64 && (int)digit < 91 ))) {
+        /*else if ((n < 1 || n > 10 || m < 1 || m > 10) || (!((int)digit > 96 && (int)digit < 123 ) &&  !((int)digit > 64 && (int)digit < 91 ))) {
             if (n < 1 || n > 10 || m < 1 || m > 10) textfield << "Coordinate is wrong ( " << n << ", " << m << " )" << endl;
             if (!((int)digit > 96 && (int)digit < 123 ) &&  !((int)digit > 64 && (int)digit < 91 )) textfield << "Not a letter of the Latin alphabet: " << digit << endl;
-        }
+        }*/
         else {
                 int conectNum = 1;
                 Base *obj;
@@ -36,10 +38,7 @@ void Root::build() {
                 note->num = conectNum;
                 note->obj2 = obj->getName();
                 history.push_back(note);
-                findedline = obj->setCoordinates(n);
-                obj->setDigit(digit, m, n, findedline);
                 startsignal();
-
         }
     }
     this->printFile();
@@ -59,19 +58,72 @@ TYPE_HANDLER Root::getHandler(int classNum) {
 void Root::startsignal() {
     string text;
     Base *obj;
-    text = "Set coordinates (";
-    text += to_string(n) + ", " + to_string(m) + ")";
+    text = "text";
     obj = find("obj");
     obj->emit_signal(Root::getSignal(obj->getClassNum()), text);
 }
 
 void Root::p_signal(string &text) {
-    text = " Text: " + this->getName() + " -> " + text;
+    if ((n < 1 || n > 10 || m < 1 || m > 10) || (!((int)digit > 96 && (int)digit < 123 ) &&  !((int)digit > 64 && (int)digit < 91 )))
+    {
+        text = "error";
+    }
+    else {
+        ifstream getstring ("textfield.txt");
+        int count = 0;
+        while (getline(getstring, text) && count != n - 1) {
+            count++;
+        }
+        getstring.close();
+    }
 }
 
 void Root::p_handler(string text) {
-    text += "Signal to ";
-    text += this->getName();
+    if(text != "0")
+    {
+        fstream firstTxt, secondTxt;
+
+        firstTxt.open("textfield.txt", ifstream::in);
+        secondTxt.open("tmp.txt", ofstream::out | ofstream::trunc);
+
+        string tmpLine;
+        while (getline(firstTxt, tmpLine)) secondTxt << tmpLine << endl;
+        firstTxt.close();
+        secondTxt.close();
+        fstream ofs, ifs;
+        ofs.open("textfield.txt", ofstream::out | ofstream::trunc);
+        ifs.open("tmp.txt", ifstream::in);
+
+        if(text == "error")
+        {
+            if (n < 1 || n > 10 || m < 1 || m > 10)
+            {
+                while (getline(ifs, tmpLine)) {
+                    ofs << tmpLine << endl;
+                }
+                ofs << "Coordinate is wrong ( " << n << ", " << m << " )" << endl;
+            }
+            if (!((int)digit > 96 && (int)digit < 123 ) &&  !((int)digit > 64 && (int)digit < 91 ))
+            {
+
+                while (getline(ifs, tmpLine)) {
+                    ofs << tmpLine << endl;
+                }
+                ofs << "Not a letter of the Latin alphabet: " << digit << endl;
+            }
+        }
+        else {
+            text[m - 1] = digit;
+            int count = 0;
+            while (getline(ifs, tmpLine)) {
+                if (count == n - 1) ofs << text << endl;
+                else ofs << tmpLine << endl;
+                count++;
+            }
+        }
+        ofs.close();
+        ifs.close();
+    }
 }
 
 Root::~Root() {

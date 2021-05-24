@@ -15,7 +15,6 @@ private:
 public:
     int n = 1, m = 1;
     char digit;
-    string findedline = "0";
 
     Root(string name);
     Root();
