@@ -81,43 +81,6 @@ Base::~Base() {
     }
 }
 
-/*string Base::setCoordinates(int n) {
-    ifstream getstring ("textfield.txt");
-    int count = 0;
-    string findline;
-    while(getline(getstring, findline) && count != n-1)
-    {
-        count++;
-    }
-    getstring.close();
-    return findline;
-}*/
-
-/*void Base::setDigit(char digit, int m, int n, string changingLine) {
-    changingLine[m-1] = digit;
-    fstream firstTxt, secondTxt;
-
-    firstTxt.open("textfield.txt", ifstream::in);
-    secondTxt.open("tmp.txt", ofstream::out | ofstream::trunc);
-
-    string tmpLine;
-    while(getline(firstTxt, tmpLine)) secondTxt << tmpLine << endl;
-    firstTxt.close(); secondTxt.close();
-    fstream ofs, ifs;
-    ofs.open("textfield.txt", ofstream::out | ofstream::trunc);
-    ifs.open("tmp.txt", ifstream::in);
-
-    int count = 0;
-    while(getline(ifs, tmpLine))
-    {
-        if(count == n-1) ofs << changingLine << endl;
-        else ofs << tmpLine << endl;
-        count ++;
-    }
-
-    ofs.close(); ifs.close();
-}*/
-
 void Base::printFile() {
     ifstream textout("textfield.txt");
     string file;
