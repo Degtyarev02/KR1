@@ -7,8 +7,8 @@
 using namespace std;
 
 class Base;
-typedef void (Base::* TYPE_SIGNAL)(string&);
-typedef void (Base::* TYPE_HANDLER)(string);
+typedef void (Base::*TYPE_SIGNAL)(string&);
+typedef void (Base::*TYPE_HANDLER)(string);
 #define SIGNAL_D(T, signal_f) ((TYPE_SIGNAL)(&T::signal_f))
 #define HANDLER_D(G, handler_f) ((TYPE_HANDLER)(&G::handler_f))
 
