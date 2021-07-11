@@ -8,7 +8,8 @@ using namespace std;
 class Root:public Base {
 protected:
     struct Note {
-        string obj1, obj2; int num;
+        string obj1, obj2;
+        int num;
     };
 private:
     vector<Note*> history;
